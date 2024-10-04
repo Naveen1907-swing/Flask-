@@ -1,4 +1,3 @@
-import streamlit as st
 from youtube_transcript_api import YouTubeTranscriptApi, TranscriptsDisabled, NoTranscriptFound
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
@@ -122,6 +121,3 @@ def main():
             st.error("No transcript found for this video.")
         except Exception as e:
             st.error(f"Error: {str(e)}")
-
-if __name__ == "__main__":
-    main()
